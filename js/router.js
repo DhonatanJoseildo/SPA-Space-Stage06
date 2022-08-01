@@ -31,10 +31,11 @@ export class Router {
     }else if (route == "/pages/universo.html") {
 
       bodyApp.classList.add('universo')
-      
+      bodyApp.classList.remove('exlporacao')
     }else if (route == "/pages/exploracao.html") {
 
       bodyApp.classList.add('exploracao')
+      bodyApp.classList.remove('universo')
     }
 
     fetch(route)

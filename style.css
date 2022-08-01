@@ -13,6 +13,7 @@ body{
   font-size: 1.6rem;
   background-image: url(images/mountains-universe-1.png);
   background-size: cover;
+  background-position: 0;
 
   min-height: 100vh;
 }
@@ -47,8 +48,10 @@ p{
   max-width: 64.8rem;
 }
 
+
+/*======= navigation ======*/
 nav a{
-  font-size: 2.4rem;
+  font-size: 2.167rem;
   line-height: 2.167rem;
   text-decoration: none;
 
@@ -57,6 +60,14 @@ nav a{
 
 nav a:hover{
   color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+nav a:first-child:checked{
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 nav{
@@ -71,12 +82,18 @@ nav .navigation{
   gap: 3.2rem;
 }
 
+
+/*============= body main ==============*/
 body #app{
   min-height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   margin-left: 3rem;
+}
+
+body.universo #app, body.exploracao #app{
+  justify-content: left;
 }
 
 body #app .home{
