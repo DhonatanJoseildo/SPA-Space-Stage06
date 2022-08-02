@@ -13,7 +13,7 @@ body{
   font-size: 1.6rem;
   background-image: url(images/mountains-universe-1.png);
   background-size: cover;
-  background-position: 0;
+  background-position: 100%;
 
   min-height: 100vh;
 }
@@ -64,7 +64,7 @@ nav a:hover{
   font-weight: 700;
 }
 
-nav a:first-child:checked{
+.checked{
   color: #FFFFFF;
   font-size: 2.4rem;
   font-weight: 700;
